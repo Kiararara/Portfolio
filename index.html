@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiara's Portfolio</title>
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    
+</head>
+<body id="top">        
+    <header>  
+        <section>
+            <a href="#top">
+                <img id="logo" src="images/KPlogo.png" alt="" >
+            </a>
+        </section>
+        
+        <nav>
+            <section id="mobile">
+                <li><a href="#portfolio" class="active">Portfolio</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </section>
+
+            <section id="desktop">
+                <li><a href="#portfolio" class="active">Portfolio</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </section>
+
+            <section id="hamburger" class="hide" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </section>
+        </nav>
+    </header>
+    <section id="hero">
+        <div id="container">
+            <section class="DUCKS">
+                <img id="Duck2" src="images/headerCHICK2.png" alt="">
+                <img id="Duck" src="images/headerCHICK.png" alt="">
+            </section>
+    
+            <span id="intro">Welcome to my portfolio!</span>
+            <a href="#portfolio">
+                <button id="check">Check it out</button>
+            </a>
+        </div>
+    </section>
+    
+    <main>
+        <section id="Portfolio">
+            <div class="anchorContainer">
+                <a class="anchor" name="portfolio"></a>
+            </div>
+            <span>Portfolio</span>
+            <section id="Displayed">
+                <div class="image-wrapper">
+                    <a href="CaseStudy.html"><img src="images/mockupCS.png" alt=""></a>
+                    <figcaption id="reveal"><a href="CaseStudy.html">Case Study</a></figcaption>
+                    <div class="overlay-text">
+                        <a href="CaseStudy.html">Case Study</a>
+                    </div>
+                </div>
+                <div class="image-wrapper">
+                    <a href="WineLabel.html"><img src="images/wineMock.png" alt=""></a>
+                    <figcaption id="reveal"><a href="WineLabel.html">Wine Bottle Label</a></figcaption>
+                    <div class="overlay-text">
+                        <a href="WineLabel.html">Wine Bottle Label</a>
+                    </div>
+                </div>
+                <div class="image-wrapper">
+                    <a href="DinoNessie.html"><img src="images/D&NMock.png" alt=""></a>
+                    <figcaption id="reveal"><a href="DinoNessie.html">Dino & Nessie</a></figcaption>
+                    <div class="overlay-text"> 
+                        <a href="DinoNessie.html">Dino & Nessie</a>
+                    </div>
+                </div>
+                <div class="image-wrapper">
+                    <a href="Ontario.html"><img src="images/Ontario_Mockup.png" alt=""></a>
+                    <figcaption id="reveal"><a href="Ontario.html">Ontario Science Center</a></figcaption>
+                    <div class="overlay-text">
+                        <a href="Ontario.html">Ontario Science Center</a>
+                    </div>
+                </div>
+                <div class="image-wrapper">
+                    <a href="PSAorgan.html"><img src="images/Postcard_Mockup.png" alt=""></a>
+                    <figcaption id="reveal"><a href="PSAorgan.html">Organ Donation PSA</a></figcaption>
+                    <div class="overlay-text">
+                        <a href="PSAorgan.html">Organ Donation PSA</a>
+                    </div>
+                </div>
+                <div class="image-wrapper">
+                    <a href="SVG.html"><img src="images/SVG_Mockup.png" alt=""></a>
+                    <figcaption id="reveal"><a href="SVG.html">SVG Animations</a></figcaption>
+                    <div class="overlay-text">
+                        <a href="SVG.html">SVG Animations</a>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="buttons">
+                <a href="Works.html"><button id="SeeMore">See more</button></a>
+                <!-- <a href=""></a><button id="PortfolioPDF">Portfolio PDF</button></a> -->
+            </section>
+        </section>
+
+        <section id="About">
+            <div class="anchorContainer">
+                <a class="anchor" name="about"></a>
+             </div>
+            <span>About me</span>
+            
+            <section id="Aboutme">
+                <div id="Info">
+                    <p id="myname">Kiara Prado</p>
+                    <p>A passionate graphic designer based in Montreal. Gaining new experiences and helping people grow are my main ambitions! 
+
+                        I specialized in designing concepts with the help of Adobe Fresco and Procreate. 
+                        
+                        I enjoy video games and drawing round animals with silly faces.
+                        
+                        You can find my contacts bellow!&nbsp;:D
+                        
+                    </p>
+                </div>
+
+                <figure id="me">
+                    <img id="me1" src="images/me.png" alt="Hi" class="visible">
+                    <img id="me2" src="images/me2.png" alt="Ah" class="hidden">
+                </figure> 
+            </section>
+        </section>
+
+        <section id="Contacts">
+            <div class="anchorContainer">
+                <a class="anchor" name="contacts"></a>
+            </div>
+            <section id="contactMe">
+                <span>Contacts</span>
+                <p>Happy to work with you!</p>
+                <div id="links">
+                    <a href="https://www.instagram.com/kiarara_raa/" target="_blank"><img src="images/Instagram_icon.png.png" alt="IG-logo"></a>
+                    <a href="https://www.linkedin.com/in/kiara-prado-44ab27326/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn-logo"></a>
+                    <a href="mailto:kiarap_designs@hotmail.com"><img src="images/emailICONv2.png" alt="Email-logo"></a>
+                </div>
+                <a href="images/Resume(PRADO).pdf" download class="download-button" download="Kiara_Prado_Resume.pdf"><button id="Resume">Resume PDF</button></a>
+            </section>
+
+        </section>
+    </main>
+
+    <Footer>
+        <p>© Kiara Prado 2025</p>
+    </Footer>
+    <script src="ham.js" defer></script>
+</body>
+</html>

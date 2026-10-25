@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dino & Nessie</title>
+    <link rel="stylesheet" href="css/Project.css">
+    <!-- <link rel="stylesheet" href="css/portfolio.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>  
+        
+        <section>
+            <a href="portfolio.html">
+                <img id="logo" src="images/KPlogo.png" alt="" >
+            </a>
+        </section>
+
+        <nav>
+            <section id="mobile">
+                <li><a href="#About" class="active">About</a></li>
+                <li><a href="#Process">Wireframes</a></li>
+                <li><a href="#Final">Final</a></li>
+            </section>
+
+            <section id="desktop">
+                <li><a href="#About" class="active">About</a></li>
+                <li><a href="#Process">Wireframes</a></li>
+                <li><a href="#Final">Final</a></li>
+            </section>
+
+            <section id="hamburger" class="hide" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </section>
+        </nav>
+    </header>
+
+    <main id="Duck">
+        <div class="anchorContainer">
+            <a class="anchor" name="About"></a>
+         </div>
+            <section id="about">
+                <section id="first">
+                    <div>
+                        <span>Dino & Nessie</span>
+                    </div>
+                    
+                    <section id="second">
+                        <div>
+                            <p id="subsub">About</p>
+                            <p id="CSinfo">A storybook made with my illustrations and knowledge from Publication Design I. This story is also available as a story to be read on your apple &nbsp; devices.</p>    
+                        </div>
+                        <div id="roles">
+                            <p id="subsub">Softwares</p>
+                            <ul>
+                                <li id="Role">Illustrator</li>
+                                <li id="Role">InDesign</li>
+                                <li id="Role">Photoshop</li>    
+                            </ul>
+                        </div>
+                    </section>
+                    
+                </section>
+                <div id="containMock">
+                    <img class="enlargeable" data-index="0" id="mockup" src="images/D&NMock.png" alt="">    
+                </div>
+
+                <div class="anchorContainer">
+                    <a class="anchor" name="Process"></a>
+                 </div>
+                <section id="process">
+                    <p id="subtitle">Wireframes</p>
+                    <div class="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img id="sketches" class="enlargeable" data-index="1" src="images/1.jpg" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img id="sketches" class="enlargeable" data-index="2" src="images/2.jpg" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img id="sketches" class="enlargeable" data-index="3" src="images/3.jpg" alt="">
+                            </div>
+                            
+                        </div>
+                        <button class="carousel-control back" onclick="prevSlide()"></button>
+                        <button class="carousel-control go" onclick="nextSlide()"></button>
+                    </div>
+                </section>
+            </section>
+            <div class="anchorContainer">
+                <a class="anchor" name="Final"></a>
+             </div>
+            <section id="final">
+                <p id="subtitle">Final Product</p>
+                <div class="visitCont">
+                    <p id="cont">Click the download button to see the storybook! This only works on <i>Apple Books</i>&nbsp;unfortunately. </p>
+                    <a href="images/Digital_publication_PRADO.epub" download class="download-button" download="Digital_publication_PRADO.epub"><button id="visit">Download</button></a>
+                </div>
+            </section>
+    </main>
+    <div class="overlay" id="imageOverlay"></div>
+    <Footer>
+        <p>© Kiara Prado 2025</p>
+    </Footer>
+    <script src="image.js" defer></script>
+    <script src="carousel.js" defer></script>
+</body>
+</html>

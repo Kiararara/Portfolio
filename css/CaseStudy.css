@@ -1,0 +1,572 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    
+    font-family: Arial, sans-serif;
+}
+
+#logo {
+    padding-left: 15px;
+    max-width: 70px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: #424242;
+    position: fixed;
+    z-index: 10;
+    padding: 15px;
+    width: 100%;
+}
+/* mobile nav*/
+#mobile.show {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #424242;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    padding: 30px;
+    padding-top: 10vh;
+    z-index: 100;
+} 
+
+#mobile.show li {
+    display: block;
+    list-style: none;
+    line-height: 2em;
+    font-size: 2rem;
+}
+
+.bar1,.bar2,.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+#hamburger {
+    display: inline-block;
+    cursor: pointer;
+    padding: 1rem;
+    position: absolute;
+    right: 4px;
+    top: 6px;
+    z-index: 110;
+
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+#mobile {
+    display: none;
+}
+
+/*desktop nav*/
+nav {
+    display: flex;
+    margin-right: 0%;
+    margin-left: auto;
+} 
+
+#desktop {
+    height: 100%;
+    margin-right: 0%;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    padding-right: 25px;
+}
+
+#desktop li, #mobile li {
+    list-style-type: none;
+}
+
+#desktop li a, #mobile li a{
+    padding-left: 15px;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#desktop a:hover, #mobile a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+/*--------*/
+#desktop {
+    display: none;
+}
+
+#hamburger {
+    display: block;
+}
+
+main{
+    margin-top: 200px;
+    padding: 25px;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1300px;
+}
+
+#second {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+#CSinfo, #Role {
+    font-size: .8rem;
+}
+
+#roles {
+    padding-left: 30px;
+}
+
+.enlarged {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+    z-index: 9999;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9998;
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 380px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+.carousel-control {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-50%);
+    background-color: #0c1263;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    width: 40px; 
+    height: 40px; 
+    text-align: center;
+    line-height: 20px;
+    border: none;
+}
+
+.carousel-control:active {
+    transform: translateY(-50%) scale(0.95); /* Optional: slight scale effect on click */
+}
+
+.carousel-control.back {
+    background-image: url(../images/arrowsL.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 10px;
+    left: 59px;
+}
+
+.carousel-control.go {
+    background-image: url(../images/arrowsR.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 15px;
+    right: 60px;
+}
+
+#refJS, #visit, #refFont {
+    background-color: #0c1263;
+    border-radius: 15px;
+    border-style: none;
+    font-size: larger;
+    height: 30px;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+    cursor:pointer;
+    width: 7em; 
+    text-align: center;
+}
+
+#refFont {
+    width: 9em;
+}
+
+.anchorContainer {
+    position: relative;
+}
+ 
+.anchor {
+    position: absolute;
+    top: -100px;
+    left: 0px;
+}
+
+p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#refJS a, #visit a, #refFont a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+#refJS:hover, #visit:hover, #refFont:hover {
+    background-color: #545bb4;
+}
+
+.visitCont {
+    text-align: center;
+}
+
+#infoA {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#animations {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding: 10px;
+    margin: 0 auto;
+    place-items: center;
+}
+
+#final img {
+    max-width: 230px;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+#containMock, #process, #final {
+    padding-top: 60px;
+}
+
+#containMock {
+    text-align: center;
+}
+
+#process img, #mockup{
+    max-width: 300px;
+    width: 100%;
+    height: 180px;
+    border-radius: 20px;
+}
+
+#Duck {
+    margin-top: 78px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+body {
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    background-color: #000000;
+}
+
+footer {
+    background-color: #0c1263;
+    text-align: center;
+    padding: 25px;
+    height: 70px;    
+    margin-top: auto;
+}
+
+#subtitle {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    color: #7c7efc;
+}
+
+#subsub {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: #96a5db;
+    padding-bottom: 0px;
+}
+
+footer p {
+    padding-top: 0px;
+    font-size: 20px;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:200;
+    font-style: normal;
+    color: #ffffff;
+}
+
+span {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+p, li, #infoF {
+    font-size: 15px;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+    color: #ffffff;
+}
+
+#colors {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #545bb4;
+}
+
+@media only screen and (min-width: 810px) {
+
+    span {
+        padding-right: 15px;
+    }
+
+    #Duck {
+        max-width: 700px;
+    }
+
+    .carousel{
+        max-width: 600px;
+        margin: 0 auto;
+        height: 450px;
+    }
+
+    #process img {
+        max-width: 550px;
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+    }
+
+    .carousel-control {
+        top: 430px;
+    }
+
+    #mockup{
+        max-width: 700px;
+        width: 600px;
+        height: 500px;
+    }
+
+    #final img {
+        width: 230px;
+        height: 230px;
+    }
+}
+
+@media only screen and (min-width: 1020px) { 
+
+    header {
+        height: 100px;
+    }
+
+    #logo {
+        max-width: 110px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hamburger {
+        top: 15px;
+    }
+
+    #Duck {
+        margin-top: 100px;
+        width: 100%;
+        max-width: 1000px;
+    }
+    
+    #infoP, #infoS {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #infoP img {
+        margin-left: auto;
+        margin-right: 0%;
+        display:flex;
+    }
+
+    #first {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        margin: 0 auto;
+    }
+
+    #second {
+        grid-template-columns: 1fr;
+    }
+
+    #roles {
+        padding-left: 0px;
+    }
+
+    span {
+        font-size: 75px;
+    }
+
+    #subsub {
+        font-size: 35px;
+    }
+
+    #refFont {
+        width: 250px;
+        height: 50px;
+    }
+
+    #refJS, #visit {
+        height: 50px;
+        width: 200px;
+    }
+
+    #refJS a, #visit a, #refFont a {
+        font-size: 25px;
+    }
+
+    .carousel-control {
+        top: 45%;
+    }
+
+    .carousel {
+        margin: 0 auto;
+        max-width: 1000px;
+        height: 650px;
+    }
+
+    .carousel-control.back {
+        left: 50px;
+    }
+
+    .carousel-control.go {
+        right: 50px;
+    }
+
+    #process img{
+        max-width: 750px;
+        width: 100%;
+        height: 450px;
+        border-radius: 20px;
+    }
+
+    #mockup {
+        max-width: 900px;
+        border-radius: 20px;
+        width: 100%;
+        height: 700px;
+    }
+
+    p, li, #infoF, #colors {
+        font-size: 20px;
+    }
+
+    #CSinfo, #Role {
+        font-size: 1rem;
+    }
+
+    #animations {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #final img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 1500px) {
+
+    #desktop {
+        display: flex;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    #mobile{
+        display: none;
+    }
+
+    span {
+        font-size: 85px;
+    }
+
+    #mockup {
+        max-width: 1000px;
+    }
+}

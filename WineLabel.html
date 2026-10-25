@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Bottle Label</title>
+    <link rel="stylesheet" href="css/Project.css">
+    <!-- <link rel="stylesheet" href="css/portfolio.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>  
+        
+        <section>
+            <a href="portfolio.html">
+                <img id="logo" src="images/KPlogo.png" alt="" >
+            </a>
+        </section>
+
+        <nav>
+            <section id="mobile">
+                <li><a href="#About" class="active">About</a></li>
+                <li><a href="#Final">Final</a></li>
+            </section>
+
+            <section id="desktop">
+                <li><a href="#About" class="active">About</a></li>
+                <li><a href="#Final">Final</a></li>
+            </section>
+
+            <section id="hamburger" class="hide" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </section>
+        </nav>
+    </header>
+
+    <main id="Duck">
+        <div class="anchorContainer">
+            <a class="anchor" name="About"></a>
+         </div>
+            <section id="about">
+                <section id="first">
+                    <div>
+                        <span>Wine Bottle Label</span>
+                    </div>
+                    
+                    <section id="second">
+                        <div>
+                            <p id="subsub">About</p>
+                            <p id="CSinfo">A wine bottle label I made during my typography and creative design class. I was tasked to design three different wine flavors while maintaining the same &nbsp; design.</p>    
+                        </div>
+                        <div id="roles">
+                            <p id="subsub">Softwares</p>
+                            <ul>
+                                <li id="Role">Illustrator</li>
+                                <li id="Role">InDesign</li>
+                                <li id="Role">Photoshop</li>    
+                            </ul>
+                        </div>
+                    </section>
+                    
+                </section>
+                <div id="containMock">
+                    <img class="enlargeable" data-index="0" id="mockup" src="images/wineMock.png" alt="">    
+                </div>
+
+            <div class="anchorContainer">
+                <a class="anchor" name="Final"></a>
+             </div>
+            <section id="final">
+                <p id="subtitle">Final Product</p>
+                <div id="animations">
+                    <div class="enlargeable" data-index="1">
+                        <img src="images/wine1.png" alt="">
+                        <img src="images/wine2.png" alt="">
+                    </div>
+                    <div class="enlargeable" data-index="2">
+                        <img src="images/wine3 (2).png" alt="">
+                        <img src="images/wine4.png" alt="">
+                    </div>
+                    <div class="enlargeable" data-index="3">
+                        <img src="images/wine5.png" alt="">
+                        <img src="images/wine6.png" alt="">
+                    </div>
+                </div>
+
+            </section>
+    </main>
+    <div class="overlay" id="imageOverlay"></div>
+    <Footer>
+        <p>© Kiara Prado 2025</p>
+    </Footer>
+    <script src="image.js" defer></script>
+    <script src="carousel.js" defer></script>
+</body>
+</html>

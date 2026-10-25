@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG animations</title>
+    <link rel="stylesheet" href="css/Project.css">
+    <!-- <link rel="stylesheet" href="css/portfolio.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>  
+        
+        <section>
+            <a href="portfolio.html">
+                <img id="logo" src="images/KPlogo.png" alt="" >
+            </a>
+        </section>
+
+        <nav>
+            <section id="mobile">
+                <li><a href="#About" class="active">About</a></li>
+                <li><a href="#Process">SVG code</a></li>
+                <li><a href="#Final">Final</a></li>
+            </section>
+
+            <section id="desktop">
+                <li><a href="#About" class="active">About</a></li>
+                <li><a href="#Process">SVG code</a></li>
+                <li><a href="#Final">Final</a></li>
+            </section>
+
+            <section id="hamburger" class="hide" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </section>
+        </nav>
+    </header>
+
+    <main id="Duck">
+        <div class="anchorContainer">
+            <a class="anchor" name="About"></a>
+         </div>
+            <section id="about">
+                <section id="first">
+                    <div>
+                        <span>SVG Animations</span>
+                    </div>
+                    
+                    <section id="second">
+                        <div>
+                            <p id="subsub">About</p>
+                            <p id="CSinfo">An animation project made using vevtor images on illustrator, turning them later into SVG images. These animations were for my CMS, Frameworks and Libraries class during my <i>Winter 2023</i>&nbsp; semester.</p>    
+                        </div>
+                        <div id="roles">
+                            <p id="subsub">Softwares</p>
+                            <ul>
+                                <li id="Role">Illustrator</li>
+                                <li id="Role">Visual Studio Code</li>  
+                            </ul>
+                        </div>
+                    </section>
+                    
+                </section>
+                <div id="containMock">
+                    <img class="enlargeable" data-index="0" id="mockup" src="images/SVG_Mockup.png" alt="">    
+                </div>
+
+                <div class="anchorContainer">
+                    <a class="anchor" name="Process"></a>
+                 </div>
+                <section id="process">
+                    <p id="subtitle">SVG code</p>
+                    <p id="infoPr">Some of the challenges I have faced whilst in the making of this project was undersatnding the code in general.</p>
+                    <video playinline muted controls="false" loop autoplay>
+                        <source src="videos/Recording 2025-02-18 222437.mp4" type="video/mp4">
+                    </video>
+                </section>
+            </section>
+            <div class="anchorContainer">
+                <a class="anchor" name="Final"></a>
+             </div>
+            <section id="final">
+                <p id="subtitle">Final Product</p>
+                <div class="visitCont">
+                    <p id="cont">Here is the final results of the animations! Click on the button below to visit the actual&nbsp;site. </p>
+                    <video playinline muted controls="false" loop autoplay>
+                        <source src="videos/SVG_animations.mp4" type="video/mp4">
+                    </video>
+                    <a href="../../web2/animation/svg_animation.html"><button id="visit">SVG animation site</button></a>
+                </div>
+            </section>
+    </main>
+    <div class="overlay" id="imageOverlay"></div>
+    <Footer>
+        <p>© Kiara Prado 2025</p>
+    </Footer>
+    <script src="image.js" defer></script>
+    <script src="carousel.js" defer></script>
+</body>
+</html>

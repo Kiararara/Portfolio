@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study</title>
+    <link rel="stylesheet" href="css/CaseStudy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>  
+        
+        <section>
+            <a href="portfolio.html">
+                <img id="logo" src="images/Business(PRADO)new.png" alt="" >
+            </a>
+        </section>
+
+        <nav>
+            <section id="mobile">
+                <li><a href="#About" class="active">About</a></li>
+                <li><a href="#Process">Process</a></li>
+                <li><a href="#Final">Final</a></li>
+            </section>
+
+            <section id="desktop">
+                <li><a href="#About" class="active">About</a></li>
+                <li><a href="#Process">Process</a></li>
+                <li><a href="#Final">Final</a></li>
+            </section>
+
+            <section id="hamburger" class="hide" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </section>
+        </nav>
+    </header>
+
+    <main id="Duck">
+        <div class="anchorContainer">
+            <a class="anchor" name="About"></a>
+         </div>
+            <section id="about">
+                <section id="first">
+                    <div>
+                        <span>The Kitty and The Star (Case Study)</span>
+                    </div>
+                    
+                    <section id="second">
+                        <div>
+                            <p id="subsub">About</p>
+                            <p id="CSinfo">A short story made using four different animations for the Animation and Dynamic Websites class. I used a CSS sprite sheet, a JavaScript loop, and a JavaScript library.</p>    
+                        </div>
+                        <div id="roles">
+                            <p id="subsub">Roles</p>
+                            <ul>
+                                <li id="Role">Illustrator</li>
+                                <li id="Role">Web Designer</li>
+                                <li id="Role">Animator</li>    
+                            </ul>
+                        </div>
+                    </section>
+                </section>
+                <div id="containMock">
+                    <img class="enlargeable" data-index="0" id="mockup" src="images/mockupCS.png" alt="">    
+                </div>
+                
+                <section id="problems">
+                    <div>
+                        <p id="subsub">The Challenge</p>
+                        <p>Although this was a relatively simple project, one of my biggest challenges was animating the first panel to achieve a fluid motion that not only looked visually appealing but also made sense within the context of the story.</p>
+                    </div>
+
+                    <div>
+                        <p id="subsub">The Solution</p>
+                        <p>To overcome this challenge, I watched online tutorials and sketched additional frames to create a smoother transition and achieve the fluid motion I envisioned for the animation.</p>    
+                    </div>
+                </section>
+            </section>
+ 
+            <div class="anchorContainer">
+                <a class="anchor" name="Process"></a>
+             </div>
+            <section id="process">
+                <p id="subtitle">Process</p>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="enlargeable" data-index="1" src="images/sketches.jpg" alt="">
+                            <p>This is the original sketches I made before going onto illustrator and refining the line art. This also helped to separate the elements I needed to be animated and those that do not needed to be animated.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="enlargeable" data-index="2" src="images/cssSPRITE.png" alt="">
+                            <p>All the frames for the first animation, put into Photoshop.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="enlargeable" data-index="3" src="images/animeSC.png" alt="">
+                            <p>The rest of the animations were made using JavaScript. The last two were made using the following JavaScript library.</p>
+                            <button id="refJS"><a href="https://animejs.com/documentation/">Animejs.com/</a></button>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="enlargeable" data-index="4" src="images/hexcodes.png" alt="">
+                            <p><span id="colors">Top row (Cat):</span> #B3B3B3, #808080, #F2F2F2, #FFA4B5, #000000, #FFFFFF <br><span id="colors">Middle row (Background + Trash):</span> #3B63D9, #1B142C, #686868, #4D4D4D <br><span id="colors">Bottom row (Star):</span> #E6C71F </p>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="enlargeable" data-index="5" src="images/fontSC.png" alt="">
+                            <p>The font used all trhoughout the site is the <i>Unbounded</i> font by NaN on from Google Fonts.
+                            </p>
+                            <button id="refFont"><a href="https://fonts.google.com/specimen/Unbounded">Unbounded font</a></button>
+                        </div>
+                    </div>
+                    <button class="carousel-control back" onclick="prevSlide()"></button>
+                    <button class="carousel-control go" onclick="nextSlide()"></button>
+                </div>
+            </section>
+
+            <div class="anchorContainer">
+                <a class="anchor" name="Final"></a>
+             </div>
+            <section id="final">
+                <p id="subtitle">Final Product</p>
+                <p id="infoF">To conclude, I had to write out my story for each animation as well as what technique was used. </p>
+                <div id="animations">
+                    <img class="enlargeable" data-index="6" src="videos/Animation_1.2.gif" alt="">
+                    <img class="enlargeable" data-index="7" src="videos/Animation_2.gif" alt="">
+                    <img class="enlargeable" data-index="8" src="videos/Animation_3.gif" alt="">
+                    <img class="enlargeable" data-index="9" src="videos/Animation_4.gif" alt="">
+                </div>
+                <div class="visitCont">
+                    <button id="visit"><a href="../../web3/The4nale.html">Visit the site!</a></button>
+                </div>
+            </section>
+    </main>
+    <div class="overlay" id="imageOverlay"></div>
+    <Footer>
+        <p>© Kiara Prado 2025</p>
+    </Footer>          
+    <script src="image.js" defer></script>
+    <script src="carousel.js" defer></script>
+</body>
+</html>
